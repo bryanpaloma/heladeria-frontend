@@ -35,21 +35,21 @@ export default function Panel() {
 
   return (
     <div>
-      <h1 className="text-3xl font-bold text-pink-600 mb-6">Panel de control</h1>
+      <h1 className="text-3xl font-bold text-indigo-700 mb-6">Panel de control</h1>
 
       {/* Contador de ventas del dia */}
       <section className="grid gap-4 sm:grid-cols-3 mb-8">
         <div className="bg-white rounded-2xl shadow-sm p-5 text-center">
           <p className="text-sm text-gray-500">Ventas de hoy</p>
-          <p className="text-3xl font-bold text-pink-600">{ventas.numeroVentas}</p>
+          <p className="text-3xl font-bold text-indigo-700">{ventas.numeroVentas}</p>
         </div>
         <div className="bg-white rounded-2xl shadow-sm p-5 text-center">
           <p className="text-sm text-gray-500">Unidades vendidas</p>
-          <p className="text-3xl font-bold text-pink-600">{ventas.unidades}</p>
+          <p className="text-3xl font-bold text-indigo-700">{ventas.unidades}</p>
         </div>
         <div className="bg-white rounded-2xl shadow-sm p-5 text-center">
           <p className="text-sm text-gray-500">Total recaudado</p>
-          <p className="text-3xl font-bold text-pink-600">{formatoPesos(ventas.totalRecaudado)}</p>
+          <p className="text-3xl font-bold text-indigo-700">{formatoPesos(ventas.totalRecaudado)}</p>
         </div>
       </section>
 
@@ -67,7 +67,7 @@ export default function Panel() {
 
           <div className="bg-white rounded-2xl shadow-sm overflow-x-auto">
             <table className="w-full text-sm text-left">
-              <thead className="bg-pink-100 text-pink-700">
+              <thead className="bg-violet-100 text-violet-700">
                 <tr>
                   <th className="px-3 py-2">Producto</th>
                   <th className="px-3 py-2">Precio</th>

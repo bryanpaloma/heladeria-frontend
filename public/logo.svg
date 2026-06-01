@@ -1,17 +1,38 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" width="128" height="128">
   <defs>
-    <linearGradient id="scoop" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="#fbcfe8"/>
-      <stop offset="1" stop-color="#f472b6"/>
+    <linearGradient id="fondo" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#7c3aed"/>
+      <stop offset="1" stop-color="#4338ca"/>
     </linearGradient>
-    <linearGradient id="cone" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="#f6c177"/>
-      <stop offset="1" stop-color="#d98e2b"/>
+    <linearGradient id="cono" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#fcd9a0"/>
+      <stop offset="1" stop-color="#d99a4e"/>
+    </linearGradient>
+    <linearGradient id="bolaMenta" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#d1fae5"/>
+      <stop offset="1" stop-color="#34d399"/>
+    </linearGradient>
+    <linearGradient id="bolaMora" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ddd6fe"/>
+      <stop offset="1" stop-color="#a78bfa"/>
     </linearGradient>
   </defs>
-  <path d="M32 60 L18 30 h28 Z" fill="url(#cone)"/>
-  <path d="M22 33 h20 M26 40 h12" stroke="#b9751f" stroke-width="1.5" stroke-linecap="round" opacity="0.6"/>
-  <circle cx="32" cy="22" r="14" fill="url(#scoop)"/>
-  <circle cx="24" cy="18" r="6" fill="#fff" opacity="0.35"/>
-  <circle cx="32" cy="7" r="3" fill="#ef4444"/>
+
+  <circle cx="64" cy="64" r="60" fill="url(#fondo)"/>
+  <circle cx="64" cy="64" r="60" fill="none" stroke="#ffffff" stroke-opacity="0.25" stroke-width="2"/>
+
+  <!-- Cono -->
+  <path d="M47 64 L64 110 L81 64 Z" fill="url(#cono)"/>
+  <path d="M53 70 L75 70 M58 82 L70 82 M62 94 L66 94" stroke="#b9751f" stroke-width="2" stroke-linecap="round" opacity="0.55"/>
+
+  <!-- Bolas de helado -->
+  <circle cx="64" cy="58" r="21" fill="url(#bolaMora)"/>
+  <circle cx="64" cy="40" r="16" fill="url(#bolaMenta)"/>
+  <circle cx="56" cy="34" r="5" fill="#ffffff" opacity="0.4"/>
+  <circle cx="54" cy="54" r="6" fill="#ffffff" opacity="0.3"/>
+
+  <!-- Cereza -->
+  <path d="M64 24 q6 -8 11 -10" fill="none" stroke="#15803d" stroke-width="2.5" stroke-linecap="round"/>
+  <circle cx="64" cy="25" r="6" fill="#ef4444"/>
+  <circle cx="62" cy="23" r="1.8" fill="#ffffff" opacity="0.6"/>
 </svg>

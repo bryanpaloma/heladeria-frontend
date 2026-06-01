@@ -9,7 +9,7 @@ import { permisos } from './lib/permisos'
 
 export default function App() {
   return (
-    <div className="min-h-screen bg-pink-50 text-gray-800">
+    <div className="min-h-screen bg-gradient-to-b from-violet-50 via-stone-50 to-stone-50 text-stone-800">
       <Navbar />
       <main className="max-w-6xl mx-auto px-4 py-6">
         <Routes>
@@ -34,7 +34,7 @@ export default function App() {
         </Routes>
       </main>
 
-      <footer className="text-center text-xs text-gray-500 py-6">
+      <footer className="text-center text-xs text-stone-400 py-6">
         Heladería Glacé · El sabor que te congela de felicidad
       </footer>
     </div>

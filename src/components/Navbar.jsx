@@ -12,32 +12,32 @@ export default function Navbar() {
   }
 
   return (
-    <nav className="bg-pink-600 text-white shadow-md">
+    <nav className="bg-gradient-to-r from-violet-700 to-indigo-700 text-white shadow-md sticky top-0 z-10">
       <div className="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between flex-wrap gap-3">
         <Link to="/" className="flex items-center gap-2">
-          <img src="/logo.svg" alt="Glacé" className="w-9 h-9" />
-          <span className="text-xl font-bold tracking-wide">Glacé</span>
+          <img src="/logo.svg" alt="Glacé" className="w-10 h-10" />
+          <span className="text-xl font-extrabold tracking-wide">Glacé</span>
         </Link>
 
         <div className="flex items-center gap-4 text-sm font-medium">
-          <Link to="/" className="hover:text-pink-200">Catálogo</Link>
+          <Link to="/" className="hover:text-amber-300 transition">Catálogo</Link>
 
           {permisos.gestionarIngredientes(rol) && (
-            <Link to="/ingredientes" className="hover:text-pink-200">Ingredientes</Link>
+            <Link to="/ingredientes" className="hover:text-amber-300 transition">Ingredientes</Link>
           )}
 
           {permisos.verPanel(rol) && (
-            <Link to="/panel" className="hover:text-pink-200">Panel</Link>
+            <Link to="/panel" className="hover:text-amber-300 transition">Panel</Link>
           )}
 
           {usuario ? (
             <div className="flex items-center gap-3">
-              <span className="bg-pink-800/50 px-3 py-1 rounded-full">
+              <span className="bg-white/15 px-3 py-1 rounded-full capitalize">
                 {usuario.nombre} · {rol}
               </span>
               <button
                 onClick={salir}
-                className="bg-white text-pink-600 px-3 py-1 rounded-md font-semibold hover:bg-pink-100"
+                className="bg-amber-400 text-indigo-900 px-3 py-1 rounded-md font-semibold hover:bg-amber-300 transition"
               >
                 Salir
               </button>
@@ -45,7 +45,7 @@ export default function Navbar() {
           ) : (
             <Link
               to="/login"
-              className="bg-white text-pink-600 px-3 py-1 rounded-md font-semibold hover:bg-pink-100"
+              className="bg-amber-400 text-indigo-900 px-3 py-1 rounded-md font-semibold hover:bg-amber-300 transition"
             >
               Ingresar
             </Link>

@@ -34,9 +34,9 @@ export default function Login() {
   return (
     <div className="max-w-sm mx-auto mt-10 bg-white rounded-2xl shadow-md p-8">
       <div className="text-center mb-6">
-        <img src="/logo.svg" alt="Glacé" className="w-16 h-16 mx-auto" />
-        <h1 className="text-2xl font-bold text-pink-600 mt-2">Iniciar sesión</h1>
-        <p className="text-sm text-gray-500">Bienvenido a Glacé</p>
+        <img src="/logo.svg" alt="Glacé" className="w-20 h-20 mx-auto" />
+        <h1 className="text-2xl font-bold text-indigo-700 mt-2">Iniciar sesión</h1>
+        <p className="text-sm text-stone-500">Bienvenido a Glacé</p>
       </div>
 
       <form onSubmit={manejarLogin} className="space-y-4">
@@ -47,7 +47,7 @@ export default function Login() {
             value={correo}
             onChange={(e) => setCorreo(e.target.value)}
             required
-            className="w-full border border-gray-300 rounded-lg px-3 py-2 focus:outline-none focus:ring-2 focus:ring-pink-400"
+            className="w-full border border-gray-300 rounded-lg px-3 py-2 focus:outline-none focus:ring-2 focus:ring-violet-400"
             placeholder="correo@ejemplo.co"
           />
         </div>
@@ -58,7 +58,7 @@ export default function Login() {
             value={password}
             onChange={(e) => setPassword(e.target.value)}
             required
-            className="w-full border border-gray-300 rounded-lg px-3 py-2 focus:outline-none focus:ring-2 focus:ring-pink-400"
+            className="w-full border border-gray-300 rounded-lg px-3 py-2 focus:outline-none focus:ring-2 focus:ring-violet-400"
             placeholder="••••••"
           />
         </div>
@@ -68,7 +68,7 @@ export default function Login() {
         <button
           type="submit"
           disabled={cargando}
-          className="w-full bg-pink-600 text-white py-2 rounded-lg font-semibold hover:bg-pink-700 disabled:opacity-60"
+          className="w-full bg-gradient-to-r from-violet-600 to-indigo-600 text-white py-2 rounded-lg font-semibold hover:opacity-90 disabled:opacity-60"
         >
           {cargando ? 'Ingresando...' : 'Ingresar'}
         </button>
